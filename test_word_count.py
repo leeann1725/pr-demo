@@ -17,3 +17,7 @@ def test_is_case_insensitive():
 
 def test_strips_punctuation():
     assert count_words("Hello, world! Hello.") == {"hello": 2, "world": 1}
+
+
+def test_empty_string_returns_empty_dict():
+    assert count_words("") == {}
